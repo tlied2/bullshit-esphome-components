@@ -1,5 +1,5 @@
-# Example: APC Back-UPS ES 700 Configuration
-# Complete production configuration for APC UPS with European defaults
+# Example: APC Back-UPS ES 600 Configuration
+# Complete production configuration for APC UPS with North American defaults
 # Copy and customize this file for your APC device
 
 substitutions:
@@ -10,12 +10,12 @@ substitutions:
 esphome:
   name: "${name}"
   friendly_name: "${friendly_name}"
-  comment: "APC Back-UPS ES 700 Monitor with European defaults"
+  comment: "APC Back-UPS ES 600 Monitor with North American defaults"
 
 # Use modular configuration packages
 packages:
   # Regional defaults (European voltage/frequency standards)
-  regional_defaults: !include ../regional/european_base.yaml
+  regional_defaults: !include ../regional/north_american_defaults.yaml
   
   # OPTIONAL: Entity grouping (improves web interface organization)
   # Uncomment to enable organized entity groups in ESPHome web interface

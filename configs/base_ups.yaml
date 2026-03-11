@@ -55,11 +55,12 @@ ota:
 web_server:
   port: 80
 
-# External components
-external_components:
-  - source:
-      type: local
-      path: ../../components
+# Seems to break remote imports
+# # External components
+# external_components:
+#   - source:
+#       type: local
+#       path: ../../components
 
 # Enable number component for delay configuration
 number:
